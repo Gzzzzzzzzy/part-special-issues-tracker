@@ -16,6 +16,10 @@ class Tests(unittest.TestCase):
  def test_due(self):
   d={'refresh':{'last_success_at':(NOW-dt.timedelta(days=9)).isoformat()}}
   self.assertFalse(due(d,NOW));self.assertTrue(due(d,NOW+dt.timedelta(days=1)));self.assertTrue(due(d,NOW,True))
+ def test_calendar_day_gate(self):
+  d={'refresh':{'last_success_at':'2026-11-17T04:14:00+00:00'}}
+  self.assertTrue(due(d,dt.datetime(2026,11,27,1,17,tzinfo=dt.timezone.utc)))
+  self.assertFalse(due(d,dt.datetime(2026,11,26,1,17,tzinfo=dt.timezone.utc)))
  def test_failure_preserves(self):
   data={'checked_at':'2026-11-16','records':[{'part':'A','url':'old','deadline':'2026-11-30','note':'conflict'}]}
   out,errors=update(data,NOW,lambda _: '<html>Site Unavailable</html>')

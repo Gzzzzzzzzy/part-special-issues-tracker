@@ -63,7 +63,10 @@ def due(data,now,force=False):
  if force:return True
  last=data.get('refresh',{}).get('last_success_at')
  if not last:return True
- try:return (now-dt.datetime.fromisoformat(last.replace('Z','+00:00'))).total_seconds()>=10*86400
+ try:
+  zone=dt.timezone(dt.timedelta(hours=8))
+  previous=dt.datetime.fromisoformat(last.replace('Z','+00:00'))
+  return (now.astimezone(zone).date()-previous.astimezone(zone).date()).days>=10
  except (ValueError,TypeError):return True
 
 def update(data,now,fetcher=fetch):

@@ -1,6 +1,6 @@
 # CFP refresh pipeline
 
-`python scripts/update_calls.py` checks the ten-day interval since the last fully successful fetch. `--force` bypasses this gate for a manual test. Python 3.12 and the standard library are sufficient.
+`python scripts/update_calls.py` checks the ten-calendar-day interval in Asia/Shanghai since the last fully successful fetch. `--force` bypasses this gate for a manual test. Python 3.12 and the standard library are sufficient.
 
 The GitHub workflow wakes daily at 01:17 UTC; most runs exit without network access. After a failed source fetch it retries at the next daily run. This is not a strict clock-time SLA: GitHub scheduled jobs may be delayed or dropped. Public repository schedules can be disabled after 60 days without repository activity; successful refresh commits normally provide activity, but a long-term failure requires maintenance.
 
@@ -14,4 +14,4 @@ The workflow commits `data.json`, including failure metadata. It deliberately do
 
 Before publishing, inspect that the repository contains only these public CFP facts and code. Do not include Site service tokens, HMAC keys, signed update headers, private gateway configuration, or other user documents.
 
-Local verification performed: 8 unit tests passed; live refresh retrieved all six lists and 15 records; immediate second run reported `Not due` and made no update. No GitHub write, workflow run or Pages deployment has been executed by this subagent.
+Local verification performed: 9 unit tests passed; live refresh retrieved all six lists and 15 records; immediate second run reported `Not due` and made no update. No GitHub write, workflow run or Pages deployment has been executed by this subagent.
