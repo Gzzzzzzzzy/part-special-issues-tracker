@@ -402,19 +402,40 @@
       "details": {
         "checked_at": "2026-11-17",
         "update_policy": "manual_curated",
-        "verification": "组织者或客座编辑公开页面核对；不是出版社详情页核验",
+        "verification": "六名客座编辑及截止日期由出版社征稿目录搜索索引缓存核对，非出版社详情页实时核验；保留 Roel Leus 个人主页的原有证据。",
         "guest_editors": [
+          {
+            "name": "Kai Wang"
+          },
+          {
+            "name": "Xiaobo Qu"
+          },
           {
             "name": "Roel Leus",
             "affiliation": "KU Leuven"
+          },
+          {
+            "name": "Max Z. Li"
+          },
+          {
+            "name": "Lingxiao Wu"
+          },
+          {
+            "name": "Jintao Ke"
           }
         ],
-        "guest_editors_complete": false,
+        "guest_editors_complete": true,
         "important_dates": [
           {
             "label": "投稿截止（共同客座编辑页面）",
             "date": "2026-12-30",
             "source_url": "https://sites.google.com/view/roel-leus",
+            "checked_at": "2026-11-17"
+          },
+          {
+            "label": "投稿截止（出版社目录搜索索引缓存，非详情页实测）",
+            "date": "2026-12-30",
+            "source_url": "https://www.sciencedirect.com/browse/calls-for-papers?subject=social-sciences-and-humanities",
             "checked_at": "2026-11-17"
           }
         ],
@@ -423,6 +444,17 @@
             "url": "https://sites.google.com/view/roel-leus",
             "title": "Roel Leus 个人学术主页",
             "type": "guest_editor",
+            "checked_at": "2026-11-17",
+            "supports": [
+              "guest_editors",
+              "important_dates"
+            ]
+          },
+          {
+            "url": "https://www.sciencedirect.com/browse/calls-for-papers?subject=social-sciences-and-humanities",
+            "title": "ScienceDirect 征稿目录（搜索索引缓存，非详情页实测）",
+            "type": "publisher_index",
+            "retrieval_method": "search_index",
             "checked_at": "2026-11-17",
             "supports": [
               "guest_editors",
@@ -779,7 +811,7 @@
       "details": {
         "checked_at": "2026-11-17",
         "update_policy": "manual_curated",
-        "verification": "编辑名单由出版社征稿索引的搜索缓存核对；未能直接读取官方详情页，征稿范围和投稿类型暂不补写。",
+        "verification": "编辑名单由出版社征稿索引搜索缓存核对，非官方详情页实时核验。范围摘要来自 ServiceSetu 第三方转载，标题、期刊及编辑与该特刊匹配，但范围仍待出版社或编辑确认。",
         "guest_editors": [
           {
             "name": "Jihong Chen",
@@ -805,8 +837,18 @@
               "guest_editors"
             ],
             "retrieval_method": "search_index"
+          },
+          {
+            "url": "https://www.servicesetu.org/trpl",
+            "title": "ServiceSetu 第三方转载（海运范围待核实）",
+            "type": "secondary_directory",
+            "checked_at": "2026-11-17",
+            "supports": [
+              "scope_summary"
+            ]
           }
-        ]
+        ],
+        "scope_summary": "【第三方转载摘要，待核实】关注地缘政治不确定性下海运系统的韧性与智能化，包括冲击下的航线与船队调度、港口拥堵和网络脆弱性、扰动预测与情景压力测试，以及人工智能、数据融合、实时分析和数字孪生辅助决策。"
       }
     },
     {
