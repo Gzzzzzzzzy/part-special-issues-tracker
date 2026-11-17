@@ -1,0 +1,54 @@
+name: Refresh special-issue candidates
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/**'
+      - 'tests/**'
+      - '.github/workflows/refresh.yml'
+  schedule:
+    - cron: '17 1 * * *'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: Refresh now even if less than ten days elapsed
+        type: boolean
+        default: false
+permissions:
+  contents: write
+concurrency:
+  group: cfp-refresh
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Refresh if due
+        id: collect
+        continue-on-error: true
+        env:
+          FORCE: ${{ inputs.force || github.event_name == 'push' }}
+        run: |
+          if [ "$FORCE" = "true" ]; then
+            python scripts/update_calls.py --force
+          else
+            python scripts/update_calls.py
+          fi
+      - name: Persist data and failure status
+        run: |
+          if ! git diff --quiet -- data.json; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add data.json
+            git commit -m 'Update CFP candidates and refresh status'
+            git push
+          fi
+      - name: Report collection failure
+        if: steps.collect.outcome == 'failure'
+        run: exit 1
