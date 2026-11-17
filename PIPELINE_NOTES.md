@@ -1,8 +1,8 @@
 # CFP refresh pipeline
 
-`python scripts/update_calls.py` checks the ten-calendar-day interval in Asia/Shanghai since the last fully successful fetch. `--force` bypasses this gate for a manual test. Python 3.12 and the standard library are sufficient.
+`python scripts/update_calls.py` checks the 240-hour interval since the last fully successful fetch. `--force` bypasses this gate for a manual test. Python 3.12 and the standard library are sufficient.
 
-The GitHub workflow wakes daily at 01:17 UTC; most runs exit without network access. After a failed source fetch it retries at the next daily run. This is not a strict clock-time SLA: GitHub scheduled jobs may be delayed or dropped. Public repository schedules can be disabled after 60 days without repository activity; successful refresh commits normally provide activity, but a long-term failure requires maintenance.
+The GitHub workflow wakes every hour at minute 17; most runs exit without network access. After a failed source fetch it retries at the next hourly run. This is not a strict clock-time SLA: GitHub scheduled jobs may be delayed or dropped. Public repository schedules can be disabled after 60 days without repository activity; successful refresh commits normally provide activity, but a long-term failure requires maintenance.
 
 Sources are JournalCompass reposted CFP listings, NOT verified publisher pages. The current publisher endpoints return unavailable pages in this environment. Never interpret HTTP 200 alone as successful retrieval. Each row keeps a publisher URL and source-verification label.
 
