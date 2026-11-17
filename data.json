@@ -82,7 +82,63 @@
       "source_url": "https://journalcompass.com/en/journals/transportation-research-part-a-policy-and-practice-09658564.html",
       "source_checked_at": "2026-11-17T04:28:20.743571+00:00",
       "source_status": "listed",
-      "last_seen_at": "2026-11-17T04:28:20.743571+00:00"
+      "last_seen_at": "2026-11-17T04:28:20.743571+00:00",
+      "details": {
+        "checked_at": "2026-11-17",
+        "update_policy": "manual_curated",
+        "verification": "客座编辑公开公告核对范围与编辑；截止日来自出版社索引搜索缓存，非详情页实时核验",
+        "scope_summary": "欢迎跨学科研究，讨论如何利用证据、伦理与政策支持网联及自动驾驶汽车安全、负责任地部署。",
+        "guest_editors": [
+          {
+            "name": "Kaidi Yang"
+          },
+          {
+            "name": "Qinglong Lu"
+          },
+          {
+            "name": "Raphael Stern"
+          },
+          {
+            "name": "Kun Gao"
+          },
+          {
+            "name": "Jinhao Liang"
+          }
+        ],
+        "guest_editors_complete": true,
+        "article_type": "VSI: CAV-Safety-TRA",
+        "important_dates": [
+          {
+            "label": "投稿截止（出版社索引搜索缓存）",
+            "date": "2027-01-30",
+            "source_url": "https://www.sciencedirect.com/browse/calls-for-papers?subject=social-sciences-and-humanities",
+            "checked_at": "2026-11-17"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.linkedin.com/posts/kaidi-yang-49114369_connectedautomatedvehicles-autonomousvehicles-activity-7459191883773231104-Tldb",
+            "title": "Kaidi Yang 的客座编辑征稿公告",
+            "type": "guest_editor",
+            "checked_at": "2026-11-17",
+            "supports": [
+              "scope_summary",
+              "guest_editors",
+              "article_type"
+            ]
+          },
+          {
+            "url": "https://www.sciencedirect.com/browse/calls-for-papers?subject=social-sciences-and-humanities",
+            "title": "ScienceDirect 征稿索引（搜索缓存）",
+            "type": "publisher_index",
+            "checked_at": "2026-11-17",
+            "supports": [
+              "important_dates"
+            ],
+            "retrieval_method": "search_index"
+          }
+        ]
+      }
     },
     {
       "part": "A",
@@ -104,7 +160,64 @@
       "source_url": "https://journalcompass.com/en/journals/transportation-research-part-a-policy-and-practice-09658564.html",
       "source_checked_at": "2026-11-17T04:28:20.743571+00:00",
       "source_status": "listed",
-      "last_seen_at": "2026-11-17T04:28:20.743571+00:00"
+      "last_seen_at": "2026-11-17T04:28:20.743571+00:00",
+      "details": {
+        "checked_at": "2026-11-17",
+        "update_policy": "manual_curated",
+        "verification": "编辑名单和日期来自出版社索引搜索缓存；尚未核实完整范围与延期信息",
+        "guest_editors": [
+          {
+            "name": "Jason Cao"
+          },
+          {
+            "name": "Tiziana D’Alfonso"
+          },
+          {
+            "name": "Ricardo Daziano"
+          },
+          {
+            "name": "Mirko Giagnorio"
+          }
+        ],
+        "guest_editors_complete": true,
+        "important_dates": [
+          {
+            "label": "投稿截止（出版社索引搜索缓存；另有转载日期冲突）",
+            "date": "2027-06-10",
+            "source_url": "https://www.sciencedirect.com/browse/calls-for-papers?dgcid=STMJ_1687166064_STMJIN_OTR",
+            "checked_at": "2026-11-17"
+          },
+          {
+            "label": "投稿截止（转载目录；与出版社索引冲突，待核实）",
+            "date": "2027-06-27",
+            "source_url": "https://www.allfortransport.com/calls-for-papers/2/",
+            "checked_at": "2026-11-17"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.sciencedirect.com/browse/calls-for-papers?dgcid=STMJ_1687166064_STMJIN_OTR",
+            "title": "ScienceDirect 征稿索引（搜索缓存）",
+            "type": "publisher_index",
+            "checked_at": "2026-11-17",
+            "supports": [
+              "guest_editors",
+              "important_dates"
+            ],
+            "retrieval_method": "search_index"
+          },
+          {
+            "url": "https://www.allfortransport.com/calls-for-papers/2/",
+            "title": "All For Transport 征稿目录（转载来源）",
+            "type": "secondary_directory",
+            "checked_at": "2026-11-17",
+            "supports": [
+              "important_dates"
+            ],
+            "retrieval_method": "search_index"
+          }
+        ]
+      }
     },
     {
       "part": "B",
@@ -303,7 +416,39 @@
       "source_url": "https://journalcompass.com/en/journals/transportation-research-part-d-transport-and-environment-13619209.html",
       "source_checked_at": "2026-11-17T04:28:20.743571+00:00",
       "source_status": "listed",
-      "last_seen_at": "2026-11-17T04:28:20.743571+00:00"
+      "last_seen_at": "2026-11-17T04:28:20.743571+00:00",
+      "details": {
+        "checked_at": "2026-11-17",
+        "update_policy": "manual_curated",
+        "verification": "客座编辑及列明日期来自出版社征稿目录的搜索索引快照，非官方详情页实时核验；范围与投稿文章类型尚未核实。",
+        "guest_editors": [
+          {
+            "name": "Qunwei Wang"
+          },
+          {
+            "name": "Fei Wu"
+          },
+          {
+            "name": "Stef Proost"
+          },
+          {
+            "name": "Stefan Baumeister"
+          }
+        ],
+        "guest_editors_complete": false,
+        "sources": [
+          {
+            "url": "https://www.sciencedirect.com/browse/calls-for-papers?subject=social-sciences-and-humanities",
+            "title": "ScienceDirect 征稿目录（搜索索引快照）",
+            "type": "publisher_index",
+            "checked_at": "2026-11-17",
+            "retrieval_method": "search_index",
+            "supports": [
+              "guest_editors"
+            ]
+          }
+        ]
+      }
     },
     {
       "part": "D",
@@ -325,7 +470,45 @@
       "source_url": "https://journalcompass.com/en/journals/transportation-research-part-d-transport-and-environment-13619209.html",
       "source_checked_at": "2026-11-17T04:28:20.743571+00:00",
       "source_status": "listed",
-      "last_seen_at": "2026-11-17T04:28:20.743571+00:00"
+      "last_seen_at": "2026-11-17T04:28:20.743571+00:00",
+      "details": {
+        "checked_at": "2026-11-17",
+        "update_policy": "manual_curated",
+        "verification": "客座编辑及列明日期来自出版社征稿目录的搜索索引快照，非官方详情页实时核验；范围与投稿文章类型尚未核实。",
+        "guest_editors": [
+          {
+            "name": "Nikola Vladimir"
+          },
+          {
+            "name": "Ailong Fan"
+          },
+          {
+            "name": "Thalis Zis"
+          }
+        ],
+        "guest_editors_complete": false,
+        "sources": [
+          {
+            "url": "https://www.sciencedirect.com/browse/calls-for-papers?dgcid=STMJ_1687166064_STMJIN_OTR",
+            "title": "ScienceDirect 征稿目录（搜索索引快照）",
+            "type": "publisher_index",
+            "checked_at": "2026-11-17",
+            "retrieval_method": "search_index",
+            "supports": [
+              "guest_editors",
+              "important_dates"
+            ]
+          }
+        ],
+        "important_dates": [
+          {
+            "label": "出版社目录索引列示截止日期（需核对投稿系统）",
+            "date": "2026-12-30",
+            "source_url": "https://www.sciencedirect.com/browse/calls-for-papers?dgcid=STMJ_1687166064_STMJIN_OTR",
+            "checked_at": "2026-11-17"
+          }
+        ]
+      }
     },
     {
       "part": "D",
@@ -347,7 +530,65 @@
       "source_url": "https://journalcompass.com/en/journals/transportation-research-part-d-transport-and-environment-13619209.html",
       "source_checked_at": "2026-11-17T04:28:20.743571+00:00",
       "source_status": "listed",
-      "last_seen_at": "2026-11-17T04:28:20.743571+00:00"
+      "last_seen_at": "2026-11-17T04:28:20.743571+00:00",
+      "details": {
+        "checked_at": "2026-11-17",
+        "update_policy": "manual_curated",
+        "verification": "客座编辑及列明日期来自出版社征稿目录的搜索索引快照，非官方详情页实时核验；范围与投稿文章类型尚未核实。 王思寒的客座编辑身份另经其大学教师主页确认。",
+        "guest_editors": [
+          {
+            "name": "Zhuoqian Yang",
+            "affiliation": "Southwest Jiaotong University"
+          },
+          {
+            "name": "Yimeng Zhang",
+            "affiliation": "Southwest Jiaotong University"
+          },
+          {
+            "name": "Zihao An",
+            "affiliation": "University of Leeds"
+          },
+          {
+            "name": "Bilge Atasoy",
+            "affiliation": "Delft University of Technology"
+          },
+          {
+            "name": "Sihan Wang",
+            "affiliation": "Southwest Jiaotong University"
+          }
+        ],
+        "guest_editors_complete": false,
+        "sources": [
+          {
+            "url": "https://www.sciencedirect.com/browse/calls-for-papers?subject=social-sciences-and-humanities",
+            "title": "ScienceDirect 征稿目录（搜索索引快照）",
+            "type": "publisher_index",
+            "checked_at": "2026-11-17",
+            "retrieval_method": "search_index",
+            "supports": [
+              "guest_editors",
+              "important_dates"
+            ]
+          },
+          {
+            "url": "https://faculty.swjtu.edu.cn/sihanWang/zh_CN/index/845609/list/index.htm",
+            "title": "西南交通大学王思寒教师主页",
+            "type": "guest_editor",
+            "checked_at": "2026-11-17",
+            "supports": [
+              "guest_editors.Sihan Wang"
+            ]
+          }
+        ],
+        "important_dates": [
+          {
+            "label": "出版社目录索引列示截止日期（需核对投稿系统）",
+            "date": "2026-12-31",
+            "source_url": "https://www.sciencedirect.com/browse/calls-for-papers?subject=social-sciences-and-humanities",
+            "checked_at": "2026-11-17"
+          }
+        ]
+      }
     },
     {
       "part": "D",
@@ -369,7 +610,48 @@
       "source_url": "https://journalcompass.com/en/journals/transportation-research-part-d-transport-and-environment-13619209.html",
       "source_checked_at": "2026-11-17T04:28:20.743571+00:00",
       "source_status": "listed",
-      "last_seen_at": "2026-11-17T04:28:20.743571+00:00"
+      "last_seen_at": "2026-11-17T04:28:20.743571+00:00",
+      "details": {
+        "checked_at": "2026-11-17",
+        "update_policy": "manual_curated",
+        "verification": "客座编辑及列明日期来自出版社征稿目录的搜索索引快照，非官方详情页实时核验；范围与投稿文章类型尚未核实。",
+        "guest_editors": [
+          {
+            "name": "Zhao Zhang"
+          },
+          {
+            "name": "Xiangdong Xu"
+          },
+          {
+            "name": "Jiangping Zhou"
+          },
+          {
+            "name": "Albert Solé Ribalta"
+          }
+        ],
+        "guest_editors_complete": false,
+        "sources": [
+          {
+            "url": "https://www.sciencedirect.com/browse/calls-for-papers?subject=social-sciences-and-humanities",
+            "title": "ScienceDirect 征稿目录（搜索索引快照）",
+            "type": "publisher_index",
+            "checked_at": "2026-11-17",
+            "retrieval_method": "search_index",
+            "supports": [
+              "guest_editors",
+              "important_dates"
+            ]
+          }
+        ],
+        "important_dates": [
+          {
+            "label": "出版社目录索引列示截止日期（需核对投稿系统）",
+            "date": "2027-02-12",
+            "source_url": "https://www.sciencedirect.com/browse/calls-for-papers?subject=social-sciences-and-humanities",
+            "checked_at": "2026-11-17"
+          }
+        ]
+      }
     },
     {
       "part": "D",
@@ -391,7 +673,51 @@
       "source_url": "https://journalcompass.com/en/journals/transportation-research-part-d-transport-and-environment-13619209.html",
       "source_checked_at": "2026-11-17T04:28:20.743571+00:00",
       "source_status": "listed",
-      "last_seen_at": "2026-11-17T04:28:20.743571+00:00"
+      "last_seen_at": "2026-11-17T04:28:20.743571+00:00",
+      "details": {
+        "checked_at": "2026-11-17",
+        "update_policy": "manual_curated",
+        "verification": "客座编辑及列明日期来自出版社征稿目录的搜索索引快照，非官方详情页实时核验；范围与投稿文章类型尚未核实。",
+        "guest_editors": [
+          {
+            "name": "Moataz Mohamed"
+          },
+          {
+            "name": "Eleftheria (Ria) Kontou"
+          },
+          {
+            "name": "Scott Hardman"
+          },
+          {
+            "name": "Efstathios Alexandros Tingas"
+          },
+          {
+            "name": "Patrick Jochem"
+          }
+        ],
+        "guest_editors_complete": false,
+        "sources": [
+          {
+            "url": "https://www.sciencedirect.com/browse/calls-for-papers?dgcid=STMJ_1686838576_STMJIN_OTR",
+            "title": "ScienceDirect 征稿目录（搜索索引快照）",
+            "type": "publisher_index",
+            "checked_at": "2026-11-17",
+            "retrieval_method": "search_index",
+            "supports": [
+              "guest_editors",
+              "important_dates"
+            ]
+          }
+        ],
+        "important_dates": [
+          {
+            "label": "出版社目录索引列示截止日期（需核对投稿系统）",
+            "date": "2027-02-26",
+            "source_url": "https://www.sciencedirect.com/browse/calls-for-papers?dgcid=STMJ_1686838576_STMJIN_OTR",
+            "checked_at": "2026-11-17"
+          }
+        ]
+      }
     },
     {
       "part": "E",
@@ -413,7 +739,39 @@
       "source_url": "https://journalcompass.com/en/journals/transportation-research-part-e-logistics-and-transportation-review-13665545.html",
       "source_checked_at": "2026-11-17T04:28:20.743571+00:00",
       "source_status": "listed",
-      "last_seen_at": "2026-11-17T04:28:20.743571+00:00"
+      "last_seen_at": "2026-11-17T04:28:20.743571+00:00",
+      "details": {
+        "checked_at": "2026-11-17",
+        "update_policy": "manual_curated",
+        "verification": "编辑名单由出版社征稿索引的搜索缓存核对；未能直接读取官方详情页，征稿范围和投稿类型暂不补写。",
+        "guest_editors": [
+          {
+            "name": "Jihong Chen",
+            "affiliation": "Shenzhen University"
+          },
+          {
+            "name": "Qiang Meng",
+            "affiliation": "National University of Singapore"
+          },
+          {
+            "name": "Ziaul Haque Munim",
+            "affiliation": "University of South-Eastern Norway"
+          }
+        ],
+        "guest_editors_complete": true,
+        "sources": [
+          {
+            "url": "https://www.sciencedirect.com/browse/calls-for-papers?subject=social-sciences-and-humanities",
+            "title": "ScienceDirect 征稿索引（搜索缓存，抓取于约两周前）",
+            "type": "publisher_index",
+            "checked_at": "2026-11-17",
+            "supports": [
+              "guest_editors"
+            ],
+            "retrieval_method": "search_index"
+          }
+        ]
+      }
     },
     {
       "part": "E",
@@ -435,7 +793,67 @@
       "source_url": "https://journalcompass.com/en/journals/transportation-research-part-e-logistics-and-transportation-review-13665545.html",
       "source_checked_at": "2026-11-17T04:28:20.743571+00:00",
       "source_status": "listed",
-      "last_seen_at": "2026-11-17T04:28:20.743571+00:00"
+      "last_seen_at": "2026-11-17T04:28:20.743571+00:00",
+      "details": {
+        "checked_at": "2026-11-17",
+        "update_policy": "manual_curated",
+        "verification": "主题与延期由客座编辑 Wenbo Fan 的公开原帖（嵌于转载页）核对；完整编辑名单由出版社索引搜索缓存核对。",
+        "scope_summary": "征集自动驾驶公交与车辆研究，关注其在未来城市出行中的作用。",
+        "guest_editors": [
+          {
+            "name": "Weihua Gu",
+            "affiliation": "The Hong Kong Polytechnic University"
+          },
+          {
+            "name": "Jinwoo Lee",
+            "affiliation": "Korea Advanced Institute of Science and Technology"
+          },
+          {
+            "name": "S. Ilgin Guler",
+            "affiliation": "The Pennsylvania State University"
+          },
+          {
+            "name": "Wenbo Fan",
+            "affiliation": "Southwest Jiaotong University"
+          },
+          {
+            "name": "Weitiao Wu",
+            "affiliation": "South China University of Technology"
+          }
+        ],
+        "guest_editors_complete": true,
+        "important_dates": [
+          {
+            "label": "延期后投稿截止",
+            "date": "2026-12-30",
+            "source_url": "https://www.linkedin.com/posts/all-for-transport_callforpapers-transportationresearch-transportationresearchparte-activity-7495729520080117760-bZaQ",
+            "checked_at": "2026-11-17"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.linkedin.com/posts/all-for-transport_callforpapers-transportationresearch-transportationresearchparte-activity-7495729520080117760-bZaQ",
+            "title": "Wenbo Fan 延期公告（All For Transport 页面内嵌原帖）",
+            "type": "guest_editor",
+            "checked_at": "2026-11-17",
+            "supports": [
+              "scope_summary",
+              "important_dates"
+            ]
+          },
+          {
+            "url": "https://www.sciencedirect.com/browse/calls-for-papers?subject=social-sciences-and-humanities",
+            "title": "ScienceDirect 征稿索引（搜索缓存，抓取于约两周前）",
+            "type": "publisher_index",
+            "checked_at": "2026-11-17",
+            "supports": [
+              "guest_editors",
+              "important_dates"
+            ],
+            "retrieval_method": "search_index"
+          }
+        ]
+      }
     },
     {
       "part": "E",
@@ -457,7 +875,52 @@
       "source_url": "https://journalcompass.com/en/journals/transportation-research-part-e-logistics-and-transportation-review-13665545.html",
       "source_checked_at": "2026-11-17T04:28:20.743571+00:00",
       "source_status": "listed",
-      "last_seen_at": "2026-11-17T04:28:20.743571+00:00"
+      "last_seen_at": "2026-11-17T04:28:20.743571+00:00",
+      "details": {
+        "checked_at": "2026-11-17",
+        "update_policy": "manual_curated",
+        "verification": "由客座编辑 Masood Fathi 的公开征稿原帖核对。",
+        "scope_summary": "征集运用工业工程与数据驱动方法设计可持续、韧性及智能交通物流系统的原创研究，涵盖货运、城市、工业与人道主义场景。",
+        "guest_editors": [
+          {
+            "name": "Masood Fathi"
+          },
+          {
+            "name": "Taha Arbaoui"
+          },
+          {
+            "name": "Daria Battini"
+          },
+          {
+            "name": "Alexandre Dolgui"
+          },
+          {
+            "name": "Khaled Hadj-Hamou"
+          }
+        ],
+        "guest_editors_complete": true,
+        "important_dates": [
+          {
+            "label": "投稿截止",
+            "date": "2026-12-31",
+            "source_url": "https://www.linkedin.com/posts/masood-fathi-55533174_callforpapers-specialissue-transportationresearch-activity-7483202023379677184-G44o",
+            "checked_at": "2026-11-17"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.linkedin.com/posts/masood-fathi-55533174_callforpapers-specialissue-transportationresearch-activity-7483202023379677184-G44o",
+            "title": "Masood Fathi 客座编辑征稿公告",
+            "type": "guest_editor",
+            "checked_at": "2026-11-17",
+            "supports": [
+              "scope_summary",
+              "guest_editors",
+              "important_dates"
+            ]
+          }
+        ]
+      }
     },
     {
       "part": "F",
