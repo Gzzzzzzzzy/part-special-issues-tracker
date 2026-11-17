@@ -23,6 +23,8 @@ function selectRecords(){const q=$('query').value.trim().toLowerCase(),period=$(
 function timing(r){const n=days(r.deadline);return Number.isNaN(n)?'时间待确认':n<0?'参考截止日已过 '+(-n)+' 天':n===0?'参考截止日为今天':'距参考截止日约 '+n+' 天'}
 function badges(r){let b='<span class="tag">待核对投稿系统</span>';if(hasConflict(r))b+='<span class="tag alert">截止日期冲突</span>';if(r.source_status==='not_listed_unconfirmed')b+='<span class="tag alert">本轮目录未列出</span>';if(hasDetails(r))b+='<span class="tag">含范围 / 编辑资料</span>';return b}
 function favoriteButton(r){return '<button class="star" data-favorite="'+esc(r.url)+'" aria-label="'+(favorites.has(r.url)?'取消关注：':'关注：')+esc(r.title)+'" aria-pressed="'+favorites.has(r.url)+'">'+(favorites.has(r.url)?'★':'☆')+'</button>'}
+function evidenceLabel(x){if(x.retrieval_method==='search_index'||x.type==='publisher_index')return '搜索索引缓存，非官方详情页实时核验';return ({guest_editor:'客座编辑公开公告 / 主页',organizer:'组织者公开征稿页',secondary_directory:'转载目录，非官方确认',publisher_detail:'出版社详情页'})[x.type]||'来源类型待确认'}
+function supportedFields(x){const labels={scope_summary:'征稿范围',guest_editors:'客座编辑',important_dates:'重要日期',article_type:'投稿类型'};return (x.supports||[]).map(k=>labels[k]||k.replace('guest_editors.','客座编辑：')).join('、')}
 function detailsMarkup(r){const d=r.details||{};const guests=Array.isArray(d.guest_editors)?d.guest_editors:[],dates=Array.isArray(d.important_dates)?d.important_dates:[],sources=Array.isArray(d.sources)?d.sources:[],obs=Array.isArray(r.deadline_observations)?r.deadline_observations:[];
 let content='<div class="detail-box"><p class="detail-label">征稿范围</p><p>'+esc(d.scope_summary||'尚未补充经过一手来源核实的范围摘要，请查看官方征稿页。')+'</p>';
 content+='<p class="detail-label">'+(d.guest_editors_complete===false?'已核实的客座编辑（非完整名单）':'客座编辑')+'</p><p>'+(guests.length?guests.map(e=>esc(e.name)+(e.affiliation?' · '+esc(e.affiliation):'')).join('<br>'):'尚未核实，不据题目推断编辑名单。')+'</p>';
@@ -30,7 +32,7 @@ if(d.article_type)content+='<p><span class="detail-label">投稿类型：</span>
 if(dates.length)content+='<p class="detail-label">来源列出的重要日期</p><ul>'+dates.map(x=>'<li>'+esc(x.label)+'：'+esc(x.date)+(x.source_url?' · '+link(x.source_url,'查看出处'):'')+'</li>').join('')+'</ul>';
 if(d.checked_at)content+='<p class="tiny">人工详情核查日期：'+esc(d.checked_at)+'；自动目录采集不刷新此日期。</p>';
 if(d.verification)content+='<p class="tiny">详情核查说明：'+esc(d.verification)+'</p>';
-if(sources.length)content+='<p class="detail-label">详情来源</p><ul>'+sources.map(x=>'<li class="source-link">'+link(x.url,x.title||x.type||'原始资料')+(x.checked_at?' · 核查 '+esc(x.checked_at):'')+'</li>').join('')+'</ul>';
+if(sources.length)content+='<p class="detail-label">详情来源</p><ul>'+sources.map(x=>'<li class="source-link">'+link(x.url,x.title||x.type||'原始资料')+(x.checked_at?' · 核查 '+esc(x.checked_at):'')+'<div class="tiny">证据类型：'+esc(evidenceLabel(x))+(supportedFields(x)?'；支持字段：'+esc(supportedFields(x)):'')+'</div></li>').join('')+'</ul>';
 content+='</div><p><span class="detail-label">参考截止日：</span>'+esc(r.deadline)+'。'+(hasConflict(r)?'<strong>存在冲突，不能将此日期视为最终期限。</strong>':'投稿前仍需核对官方最新通知。')+'</p>';
 if(r.reported_deadline&&r.reported_deadline!==r.deadline)content+='<p class="note">目录最近报告：'+esc(r.reported_deadline)+'；尚未覆盖既有参考日期。</p>';
 if(r.note)content+='<p class="note">'+esc(r.note)+'</p>';
