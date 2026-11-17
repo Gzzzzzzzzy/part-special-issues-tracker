@@ -17,9 +17,10 @@ VERIFY = '转载源自动采集，尚未完成出版社详情页核验'
 
 class CallsParser(HTMLParser):
  def __init__(self):
-  super().__init__(convert_charrefs=True); self.rows=[]; self.row=None; self.in_title=False
+  super().__init__(convert_charrefs=True); self.rows=[]; self.row=None; self.in_title=False; self.in_doc_title=False; self.doc_title=''
  def handle_starttag(self, tag, attrs):
   a=dict(attrs)
+  if tag=='title':self.in_doc_title=True
   if tag=='li' and 'call-row' in a.get('class','').split():
    if self.row is not None: raise ValueError('nested call-row')
    self.row={'title':'','url':'','deadline':''}
@@ -27,16 +28,21 @@ class CallsParser(HTMLParser):
    if tag=='a': self.in_title=True; self.row['url']=a.get('href','')
    if tag=='time': self.row['deadline']=a.get('datetime','')
  def handle_data(self,data):
+  if self.in_doc_title:self.doc_title+=data
   if self.row is not None and self.in_title:self.row['title']+=data
  def handle_endtag(self,tag):
+  if tag=='title':self.in_doc_title=False
   if tag=='a':self.in_title=False
   if tag=='li' and self.row is not None:
    self.rows.append(self.row);self.row=None
 
-def parse_calls(html):
+def parse_calls(html, expected_part=None):
  if 'Special issues open for submissions' not in html or 'calls-list' not in html:
   raise ValueError('expected CFP section missing (blocked or changed page)')
- p=CallsParser();p.feed(html)
+ p=CallsParser();p.feed(html);p.close()
+ if p.row is not None:raise ValueError('truncated CFP row')
+ if expected_part and 'Transportation Research Part '+expected_part not in p.doc_title:
+  raise ValueError('unexpected journal page title')
  if not p.rows:raise ValueError('empty CFP list needs manual verification; preserving old records')
  if len(p.rows)>100:raise ValueError('unexpected count')
  seen=set()
@@ -71,7 +77,7 @@ def update(data,now,fetcher=fetch):
  by_url={r['url']:r for r in rows}; reports={}; failures=[]
  for part,url in SOURCES.items():
   try:
-   candidates=parse_calls(fetcher(url)); present=set()
+   candidates=parse_calls(fetcher(url),part); present=set()
    for item in candidates:
     present.add(item['url']); old=by_url.get(item['url'])
     if old is None:
@@ -83,7 +89,7 @@ def update(data,now,fetcher=fetch):
     if not any(x.get('date')==item['deadline'] and x.get('source')==url for x in history):history.append(dict(observation,observed_at=stamp))
     # Never silently replace a conflicting earlier deadline.
     old['reported_deadline']=item['deadline']
-    old['deadline_conflict']=old.get('deadline')!=item['deadline'] or bool(old.get('deadline_conflict'))
+    old['deadline_conflict']=old.get('deadline')!=item['deadline'] or bool(old.get('deadline_conflict')) or '冲突' in old.get('note','')
     old['english']=item['title'];old['source_url']=url;old['source_checked_at']=stamp
     old['verification']=VERIFY;old['source_status']='listed';old['last_seen_at']=stamp
    for old in rows:
@@ -94,7 +100,8 @@ def update(data,now,fetcher=fetch):
    rows[:]=[r for r in rows if r.get('part')!=part]+copy.deepcopy([r for r in data.get('records',[]) if r.get('part')==part])
    by_url={r['url']:r for r in rows}
    failures.append(part);reports[part]={'status':'failed','source':url,'error':str(e)[:300],'attempted_at':stamp}
- refresh=out.setdefault('refresh',{});refresh.update(last_attempt_at=stamp,sources=reports,status='partial_failure' if failures else 'success',interval_days=10)
+ out['schema_version']=1
+ refresh=out.setdefault('refresh',{});refresh.update(last_attempt_at=stamp,sources=reports,status='partial_failure' if failures else 'success',interval_days=10,interval_hours=240,verification_level='secondary_directory')
  if not failures:refresh['last_success_at']=stamp;out['checked_at']=day
  out['coverage_notice']='自动更新转载目录中的候选征稿，不保证完整覆盖；出版社通知为最终依据。未出现的条目不会自动判定为结束征稿。'
  return out,failures

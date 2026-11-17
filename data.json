@@ -19,9 +19,48 @@
       "reported_deadline": "2026-11-30",
       "deadline_conflict": false,
       "source_url": "https://journalcompass.com/en/journals/transportation-research-part-a-policy-and-practice-09658564.html",
-      "source_checked_at": "2026-11-17T04:17:32.828679+00:00",
+      "source_checked_at": "2026-11-17T04:24:34.080774+00:00",
       "source_status": "listed",
-      "last_seen_at": "2026-11-17T04:17:32.828679+00:00"
+      "last_seen_at": "2026-11-17T04:24:34.080774+00:00",
+      "details": {
+        "checked_at": "2026-11-17",
+        "update_policy": "manual_curated",
+        "verification": "组织者或客座编辑公开页面核对；不是出版社详情页核验",
+        "scope_summary": "关注高铁规划、融资与治理，以及站城融合和区域发展。欢迎具有明确政策意义的实证、理论和国际比较研究，尤其关注准实验、空间建模及大规模数据方法。",
+        "guest_editors": [
+          {
+            "name": "Zhenhua Chen",
+            "affiliation": "The Ohio State University"
+          },
+          {
+            "name": "Kojiro Sho",
+            "affiliation": "University of Tokyo"
+          },
+          {
+            "name": "Francesca Pagliara",
+            "affiliation": "University of Naples Federico II"
+          },
+          {
+            "name": "Chao Liu",
+            "affiliation": "Tongji University"
+          }
+        ],
+        "guest_editors_complete": true,
+        "article_type": "VSI: HSR Planning & Development",
+        "sources": [
+          {
+            "url": "https://www.china-planning.org/alpha/2026-iacp-annual-conference-call-for-abstracts-2/special-session-on-high-speed-rail-planning-station-city-integration-and-regional-development-at-iacp-2026-conference/",
+            "title": "IACP 特刊专题征稿页",
+            "type": "organizer",
+            "checked_at": "2026-11-17",
+            "supports": [
+              "scope_summary",
+              "guest_editors",
+              "article_type"
+            ]
+          }
+        ]
+      }
     },
     {
       "part": "A",
@@ -41,9 +80,9 @@
       "reported_deadline": "2027-01-30",
       "deadline_conflict": false,
       "source_url": "https://journalcompass.com/en/journals/transportation-research-part-a-policy-and-practice-09658564.html",
-      "source_checked_at": "2026-11-17T04:17:32.828679+00:00",
+      "source_checked_at": "2026-11-17T04:24:34.080774+00:00",
       "source_status": "listed",
-      "last_seen_at": "2026-11-17T04:17:32.828679+00:00"
+      "last_seen_at": "2026-11-17T04:24:34.080774+00:00"
     },
     {
       "part": "A",
@@ -61,11 +100,11 @@
         }
       ],
       "reported_deadline": "2027-06-10",
-      "deadline_conflict": false,
+      "deadline_conflict": true,
       "source_url": "https://journalcompass.com/en/journals/transportation-research-part-a-policy-and-practice-09658564.html",
-      "source_checked_at": "2026-11-17T04:17:32.828679+00:00",
+      "source_checked_at": "2026-11-17T04:24:34.080774+00:00",
       "source_status": "listed",
-      "last_seen_at": "2026-11-17T04:17:32.828679+00:00"
+      "last_seen_at": "2026-11-17T04:24:34.080774+00:00"
     },
     {
       "part": "B",
@@ -85,9 +124,56 @@
       "reported_deadline": "2026-12-01",
       "deadline_conflict": false,
       "source_url": "https://journalcompass.com/en/journals/transportation-research-part-b-methodological-01912615.html",
-      "source_checked_at": "2026-11-17T04:17:32.828679+00:00",
+      "source_checked_at": "2026-11-17T04:24:34.080774+00:00",
       "source_status": "listed",
-      "last_seen_at": "2026-11-17T04:17:32.828679+00:00"
+      "last_seen_at": "2026-11-17T04:24:34.080774+00:00",
+      "details": {
+        "checked_at": "2026-11-17",
+        "update_policy": "manual_curated",
+        "verification": "组织者或客座编辑公开页面核对；不是出版社详情页核验",
+        "scope_summary": "强调交通人工智能的数学基础，而非只把 AI 用作预测工具；关注可行性、最优性、均衡或性能保证，以及交通知识与模型结构的融合、可解释的系统行为洞见。",
+        "guest_editors": [
+          {
+            "name": "Lili Du"
+          },
+          {
+            "name": "Zhiwei Chen"
+          },
+          {
+            "name": "Neda Masoud"
+          }
+        ],
+        "guest_editors_complete": true,
+        "important_dates": [
+          {
+            "label": "投稿截止（客座编辑实验室页面）",
+            "date": "2026-12-01",
+            "source_url": "https://public.websites.umich.edu/nmasoud/index.html",
+            "checked_at": "2026-11-17"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.linkedin.com/posts/neda-masoud-99418825_transportation-research-part-b-methodological-activity-7477779052313980928-knXS",
+            "title": "Neda Masoud 的特刊征稿说明",
+            "type": "guest_editor",
+            "checked_at": "2026-11-17",
+            "supports": [
+              "scope_summary",
+              "guest_editors"
+            ]
+          },
+          {
+            "url": "https://public.websites.umich.edu/nmasoud/index.html",
+            "title": "University of Michigan NGMS 实验室公告",
+            "type": "guest_editor",
+            "checked_at": "2026-11-17",
+            "supports": [
+              "important_dates"
+            ]
+          }
+        ]
+      }
     },
     {
       "part": "B",
@@ -107,9 +193,41 @@
       "reported_deadline": "2027-03-14",
       "deadline_conflict": false,
       "source_url": "https://journalcompass.com/en/journals/transportation-research-part-b-methodological-01912615.html",
-      "source_checked_at": "2026-11-17T04:17:32.828679+00:00",
+      "source_checked_at": "2026-11-17T04:24:34.080774+00:00",
       "source_status": "listed",
-      "last_seen_at": "2026-11-17T04:17:32.828679+00:00"
+      "last_seen_at": "2026-11-17T04:24:34.080774+00:00",
+      "details": {
+        "checked_at": "2026-11-17",
+        "update_policy": "manual_curated",
+        "verification": "组织者或客座编辑公开页面核对；不是出版社详情页核验",
+        "guest_editors": [
+          {
+            "name": "Roel Leus",
+            "affiliation": "KU Leuven"
+          }
+        ],
+        "guest_editors_complete": false,
+        "important_dates": [
+          {
+            "label": "投稿截止（共同客座编辑页面）",
+            "date": "2027-03-14",
+            "source_url": "https://sites.google.com/view/roel-leus",
+            "checked_at": "2026-11-17"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://sites.google.com/view/roel-leus",
+            "title": "Roel Leus 个人学术主页",
+            "type": "guest_editor",
+            "checked_at": "2026-11-17",
+            "supports": [
+              "guest_editors",
+              "important_dates"
+            ]
+          }
+        ]
+      }
     },
     {
       "part": "C",
@@ -129,9 +247,41 @@
       "reported_deadline": "2026-12-30",
       "deadline_conflict": false,
       "source_url": "https://journalcompass.com/en/journals/transportation-research-part-c-emerging-technologies-0968090x.html",
-      "source_checked_at": "2026-11-17T04:17:32.828679+00:00",
+      "source_checked_at": "2026-11-17T04:24:34.080774+00:00",
       "source_status": "listed",
-      "last_seen_at": "2026-11-17T04:17:32.828679+00:00"
+      "last_seen_at": "2026-11-17T04:24:34.080774+00:00",
+      "details": {
+        "checked_at": "2026-11-17",
+        "update_policy": "manual_curated",
+        "verification": "组织者或客座编辑公开页面核对；不是出版社详情页核验",
+        "guest_editors": [
+          {
+            "name": "Roel Leus",
+            "affiliation": "KU Leuven"
+          }
+        ],
+        "guest_editors_complete": false,
+        "important_dates": [
+          {
+            "label": "投稿截止（共同客座编辑页面）",
+            "date": "2026-12-30",
+            "source_url": "https://sites.google.com/view/roel-leus",
+            "checked_at": "2026-11-17"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://sites.google.com/view/roel-leus",
+            "title": "Roel Leus 个人学术主页",
+            "type": "guest_editor",
+            "checked_at": "2026-11-17",
+            "supports": [
+              "guest_editors",
+              "important_dates"
+            ]
+          }
+        ]
+      }
     },
     {
       "part": "D",
@@ -151,9 +301,9 @@
       "reported_deadline": "2026-11-30",
       "deadline_conflict": false,
       "source_url": "https://journalcompass.com/en/journals/transportation-research-part-d-transport-and-environment-13619209.html",
-      "source_checked_at": "2026-11-17T04:17:32.828679+00:00",
+      "source_checked_at": "2026-11-17T04:24:34.080774+00:00",
       "source_status": "listed",
-      "last_seen_at": "2026-11-17T04:17:32.828679+00:00"
+      "last_seen_at": "2026-11-17T04:24:34.080774+00:00"
     },
     {
       "part": "D",
@@ -171,11 +321,11 @@
         }
       ],
       "reported_deadline": "2026-12-30",
-      "deadline_conflict": false,
+      "deadline_conflict": true,
       "source_url": "https://journalcompass.com/en/journals/transportation-research-part-d-transport-and-environment-13619209.html",
-      "source_checked_at": "2026-11-17T04:17:32.828679+00:00",
+      "source_checked_at": "2026-11-17T04:24:34.080774+00:00",
       "source_status": "listed",
-      "last_seen_at": "2026-11-17T04:17:32.828679+00:00"
+      "last_seen_at": "2026-11-17T04:24:34.080774+00:00"
     },
     {
       "part": "D",
@@ -195,9 +345,9 @@
       "reported_deadline": "2026-12-31",
       "deadline_conflict": false,
       "source_url": "https://journalcompass.com/en/journals/transportation-research-part-d-transport-and-environment-13619209.html",
-      "source_checked_at": "2026-11-17T04:17:32.828679+00:00",
+      "source_checked_at": "2026-11-17T04:24:34.080774+00:00",
       "source_status": "listed",
-      "last_seen_at": "2026-11-17T04:17:32.828679+00:00"
+      "last_seen_at": "2026-11-17T04:24:34.080774+00:00"
     },
     {
       "part": "D",
@@ -217,9 +367,9 @@
       "reported_deadline": "2027-02-12",
       "deadline_conflict": false,
       "source_url": "https://journalcompass.com/en/journals/transportation-research-part-d-transport-and-environment-13619209.html",
-      "source_checked_at": "2026-11-17T04:17:32.828679+00:00",
+      "source_checked_at": "2026-11-17T04:24:34.080774+00:00",
       "source_status": "listed",
-      "last_seen_at": "2026-11-17T04:17:32.828679+00:00"
+      "last_seen_at": "2026-11-17T04:24:34.080774+00:00"
     },
     {
       "part": "D",
@@ -239,9 +389,9 @@
       "reported_deadline": "2027-02-26",
       "deadline_conflict": false,
       "source_url": "https://journalcompass.com/en/journals/transportation-research-part-d-transport-and-environment-13619209.html",
-      "source_checked_at": "2026-11-17T04:17:32.828679+00:00",
+      "source_checked_at": "2026-11-17T04:24:34.080774+00:00",
       "source_status": "listed",
-      "last_seen_at": "2026-11-17T04:17:32.828679+00:00"
+      "last_seen_at": "2026-11-17T04:24:34.080774+00:00"
     },
     {
       "part": "E",
@@ -261,9 +411,9 @@
       "reported_deadline": "2026-11-30",
       "deadline_conflict": false,
       "source_url": "https://journalcompass.com/en/journals/transportation-research-part-e-logistics-and-transportation-review-13665545.html",
-      "source_checked_at": "2026-11-17T04:17:32.828679+00:00",
+      "source_checked_at": "2026-11-17T04:24:34.080774+00:00",
       "source_status": "listed",
-      "last_seen_at": "2026-11-17T04:17:32.828679+00:00"
+      "last_seen_at": "2026-11-17T04:24:34.080774+00:00"
     },
     {
       "part": "E",
@@ -283,9 +433,9 @@
       "reported_deadline": "2026-12-30",
       "deadline_conflict": false,
       "source_url": "https://journalcompass.com/en/journals/transportation-research-part-e-logistics-and-transportation-review-13665545.html",
-      "source_checked_at": "2026-11-17T04:17:32.828679+00:00",
+      "source_checked_at": "2026-11-17T04:24:34.080774+00:00",
       "source_status": "listed",
-      "last_seen_at": "2026-11-17T04:17:32.828679+00:00"
+      "last_seen_at": "2026-11-17T04:24:34.080774+00:00"
     },
     {
       "part": "E",
@@ -305,9 +455,9 @@
       "reported_deadline": "2026-12-31",
       "deadline_conflict": false,
       "source_url": "https://journalcompass.com/en/journals/transportation-research-part-e-logistics-and-transportation-review-13665545.html",
-      "source_checked_at": "2026-11-17T04:17:32.828679+00:00",
+      "source_checked_at": "2026-11-17T04:24:34.080774+00:00",
       "source_status": "listed",
-      "last_seen_at": "2026-11-17T04:17:32.828679+00:00"
+      "last_seen_at": "2026-11-17T04:24:34.080774+00:00"
     },
     {
       "part": "F",
@@ -315,66 +465,136 @@
       "english": "Accessibility and Inclusivity in Transport",
       "deadline": "2026-11-30",
       "url": "https://www.sciencedirect.com/special-issue/331933/accessibility-and-inclusivity-in-transport",
-      "note": "",
+      "note": "截止日期存在来源冲突：客座编辑公告及转载目录为 2026-11-30；ScienceDirect 征稿索引的搜索缓存为 2027-03-16。尚未核实是否延期，不应据此认定更晚日期有效；投稿前请以出版社详情页或编辑确认为准。",
       "verification": "转载源自动采集，尚未完成出版社详情页核验",
       "deadline_observations": [
         {
           "date": "2026-11-30",
           "source": "https://journalcompass.com/en/journals/transportation-research-part-f-traffic-psychology-and-behaviour-13698478.html",
           "observed_at": "2026-11-17T04:03:35.388477+00:00"
+        },
+        {
+          "date": "2026-11-30",
+          "source": "https://www.linkedin.com/posts/paola-de-pascali-ph-d-15061a60_transportation-research-part-f-traffic-psychology-activity-7445390691150524416-60S3",
+          "observed_at": "2026-11-17",
+          "retrieval_method": "public_editor_post"
+        },
+        {
+          "date": "2027-03-16",
+          "source": "https://www.sciencedirect.com/browse/calls-for-papers?subject=social-sciences-and-humanities",
+          "observed_at": "2026-11-17",
+          "retrieval_method": "search_index"
         }
       ],
       "reported_deadline": "2026-11-30",
-      "deadline_conflict": false,
+      "deadline_conflict": true,
       "source_url": "https://journalcompass.com/en/journals/transportation-research-part-f-traffic-psychology-and-behaviour-13698478.html",
-      "source_checked_at": "2026-11-17T04:17:32.828679+00:00",
+      "source_checked_at": "2026-11-17T04:24:34.080774+00:00",
       "source_status": "listed",
-      "last_seen_at": "2026-11-17T04:17:32.828679+00:00"
+      "last_seen_at": "2026-11-17T04:24:34.080774+00:00",
+      "details": {
+        "checked_at": "2026-11-17",
+        "update_policy": "manual_curated",
+        "verification": "组织者或客座编辑公开页面核对；不是出版社详情页核验",
+        "scope_summary": "关注交通可达性与包容性（及其缺失）如何影响出行者行为、态度和公共交通使用；客座编辑表示稿件滚动评审。",
+        "guest_editors": [
+          {
+            "name": "William Payre"
+          },
+          {
+            "name": "Arun Ulahannan"
+          },
+          {
+            "name": "Paola De Pascali"
+          }
+        ],
+        "guest_editors_complete": true,
+        "important_dates": [
+          {
+            "label": "投稿截止（客座编辑公告，存在冲突）",
+            "date": "2026-11-30",
+            "source_url": "https://www.linkedin.com/posts/paola-de-pascali-ph-d-15061a60_transportation-research-part-f-traffic-psychology-activity-7445390691150524416-60S3",
+            "checked_at": "2026-11-17"
+          },
+          {
+            "label": "投稿截止（出版社索引搜索缓存，待核实）",
+            "date": "2027-03-16",
+            "source_url": "https://www.sciencedirect.com/browse/calls-for-papers?subject=social-sciences-and-humanities",
+            "checked_at": "2026-11-17"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.linkedin.com/posts/paola-de-pascali-ph-d-15061a60_transportation-research-part-f-traffic-psychology-activity-7445390691150524416-60S3",
+            "title": "Paola De Pascali 的特刊征稿公告",
+            "type": "guest_editor",
+            "checked_at": "2026-11-17",
+            "supports": [
+              "scope_summary",
+              "important_dates"
+            ]
+          },
+          {
+            "url": "https://www.sciencedirect.com/browse/calls-for-papers?subject=social-sciences-and-humanities",
+            "title": "ScienceDirect 征稿索引（搜索缓存，非详情页实时核验）",
+            "type": "publisher_index",
+            "checked_at": "2026-11-17",
+            "supports": [
+              "guest_editors",
+              "important_dates"
+            ],
+            "retrieval_method": "search_index"
+          }
+        ]
+      }
     }
   ],
   "refresh": {
-    "last_attempt_at": "2026-11-17T04:17:32.828679+00:00",
+    "last_attempt_at": "2026-11-17T04:24:34.080774+00:00",
     "sources": {
       "A": {
         "status": "ok",
         "count": 3,
         "source": "https://journalcompass.com/en/journals/transportation-research-part-a-policy-and-practice-09658564.html",
-        "checked_at": "2026-11-17T04:17:32.828679+00:00"
+        "checked_at": "2026-11-17T04:24:34.080774+00:00"
       },
       "B": {
         "status": "ok",
         "count": 2,
         "source": "https://journalcompass.com/en/journals/transportation-research-part-b-methodological-01912615.html",
-        "checked_at": "2026-11-17T04:17:32.828679+00:00"
+        "checked_at": "2026-11-17T04:24:34.080774+00:00"
       },
       "C": {
         "status": "ok",
         "count": 1,
         "source": "https://journalcompass.com/en/journals/transportation-research-part-c-emerging-technologies-0968090x.html",
-        "checked_at": "2026-11-17T04:17:32.828679+00:00"
+        "checked_at": "2026-11-17T04:24:34.080774+00:00"
       },
       "D": {
         "status": "ok",
         "count": 5,
         "source": "https://journalcompass.com/en/journals/transportation-research-part-d-transport-and-environment-13619209.html",
-        "checked_at": "2026-11-17T04:17:32.828679+00:00"
+        "checked_at": "2026-11-17T04:24:34.080774+00:00"
       },
       "E": {
         "status": "ok",
         "count": 3,
         "source": "https://journalcompass.com/en/journals/transportation-research-part-e-logistics-and-transportation-review-13665545.html",
-        "checked_at": "2026-11-17T04:17:32.828679+00:00"
+        "checked_at": "2026-11-17T04:24:34.080774+00:00"
       },
       "F": {
         "status": "ok",
         "count": 1,
         "source": "https://journalcompass.com/en/journals/transportation-research-part-f-traffic-psychology-and-behaviour-13698478.html",
-        "checked_at": "2026-11-17T04:17:32.828679+00:00"
+        "checked_at": "2026-11-17T04:24:34.080774+00:00"
       }
     },
     "status": "success",
     "interval_days": 10,
-    "last_success_at": "2026-11-17T04:17:32.828679+00:00"
+    "last_success_at": "2026-11-17T04:24:34.080774+00:00",
+    "interval_hours": 240,
+    "verification_level": "secondary_directory"
   },
-  "coverage_notice": "自动更新转载目录中的候选征稿，不保证完整覆盖；出版社通知为最终依据。未出现的条目不会自动判定为结束征稿。"
+  "coverage_notice": "自动更新转载目录中的候选征稿，不保证完整覆盖；出版社通知为最终依据。未出现的条目不会自动判定为结束征稿。",
+  "schema_version": 1
 }

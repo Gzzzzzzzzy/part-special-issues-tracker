@@ -15,3 +15,8 @@ The workflow commits `data.json`, including failure metadata. It deliberately do
 Before publishing, inspect that the repository contains only these public CFP facts and code. Do not include Site service tokens, HMAC keys, signed update headers, private gateway configuration, or other user documents.
 
 Local verification performed: 9 unit tests passed; live refresh retrieved all six lists and 15 records; immediate second run reported `Not due` and made no update. No GitHub write, workflow run or Pages deployment has been executed by this subagent.
+
+## Curated research details
+`details` is an optional manually checked enrichment object. The automatic directory refresh preserves it unchanged, including its original `checked_at`; a fresh directory fetch does NOT reverify editor names, scope or important dates. `sources` maps supporting URLs to fields; dates have per-item source URLs. Missing details are unknown, not absent. A partial editor list uses `guest_editors_complete: false`. Search-index evidence is explicitly labelled and does not constitute live publisher-detail verification. Conflicting dates remain flagged until independently resolved; never silently treat the latest date as a confirmed extension.
+
+Parser checks journal identity and complete rows; blocked HTML/empty lists fail safe. Workflow actions are pinned to tested immutable commits, with a 10-minute job timeout. Thirteen unit tests cover failure preservation, exact 240-hour gating, malformed data and curated-field persistence.

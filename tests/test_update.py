@@ -1,7 +1,7 @@
 import datetime as dt,sys,unittest
 sys.path.insert(0,'scripts')
 from update_calls import *
-H='Special issues open for submissions<ul class="calls-list"><li class="call-row"><a href="https://www.sciencedirect.com/special-issue/123/test">Title &amp; more</a><time datetime="2027-01-01"></time></li></ul>'
+H='<title>Transportation Research Part A Policy and Practice</title>Special issues open for submissions<ul class="calls-list"><li class="call-row"><a href="https://www.sciencedirect.com/special-issue/123/test">Title &amp; more</a><time datetime="2027-01-01"></time></li></ul>'
 NOW=dt.datetime(2026,11,17,tzinfo=dt.timezone.utc)
 class Tests(unittest.TestCase):
  def test_parse(self):self.assertEqual(parse_calls(H)[0]['title'],'Title & more')
@@ -21,6 +21,20 @@ class Tests(unittest.TestCase):
   self.assertFalse(due(d,dt.datetime(2026,11,27,1,17,tzinfo=dt.timezone.utc)))
   self.assertTrue(due(d,dt.datetime(2026,11,27,4,17,tzinfo=dt.timezone.utc)))
   self.assertFalse(due(d,dt.datetime(2026,11,26,1,17,tzinfo=dt.timezone.utc)))
+ def test_truncated_row(self):
+  with self.assertRaises(ValueError):parse_calls(H.replace('</li>',''))
+ def test_wrong_journal(self):
+  with self.assertRaises(ValueError):parse_calls(H,'B')
+ def test_details_preserved(self):
+  details={'scope_summary':'curated','checked_at':'2026-11-16','sources':[{'url':'https://example.org'}]}
+  data={'records':[{'part':'A','url':'https://www.sciencedirect.com/special-issue/123/test','deadline':'2027-01-01','note':'期限冲突保留','details':details}]}
+  out,_=update(data,NOW,lambda u:H if u==SOURCES['A'] else 'Unavailable')
+  r=out['records'][0];self.assertEqual(r['details'],details);self.assertTrue(r['deadline_conflict'])
+ def test_omission_not_closed(self):
+  data={'records':[{'part':'A','url':'https://www.sciencedirect.com/special-issue/456/old','deadline':'2027-01-01','note':''}]}
+  out,_=update(data,NOW,lambda u:H if u==SOURCES['A'] else 'Unavailable')
+  old=[r for r in out['records'] if r['url'].endswith('/old')][0]
+  self.assertEqual(old['source_status'],'not_listed_unconfirmed')
  def test_failure_preserves(self):
   data={'checked_at':'2026-11-16','records':[{'part':'A','url':'old','deadline':'2026-11-30','note':'conflict'}]}
   out,errors=update(data,NOW,lambda _: '<html>Site Unavailable</html>')
